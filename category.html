@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在进入拾光集</title>
+    <script>
+        const params = new URLSearchParams(location.search);
+        const filter = params.get("filter") || params.get("category") || "all";
+        const q = params.get("q") || "";
+        location.replace(`./index.html#/search?${q ? `q=${encodeURIComponent(q)}&` : ""}category=${encodeURIComponent(filter)}`);
+    </script>
+</head>
+<body>正在进入新版校园集市...</body>
+</html>
