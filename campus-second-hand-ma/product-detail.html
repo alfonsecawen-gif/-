@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <script>
+        const id = new URLSearchParams(location.search).get("id");
+        location.replace(id ? `./index.html#/product/${encodeURIComponent(id)}` : "./index.html#/search");
+    </script>
+</head>
+<body>正在进入商品详情...</body>
+</html>
